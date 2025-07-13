@@ -1,0 +1,79 @@
+ body {
+          background-image: url("P_20181120_210123_vHDR_On.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+
+
+}
+
+a {
+ text-decoration: none;
+}
+
+.Git-button {
+     float: left;
+       width: 300pt;
+       height: 300pt;
+       border: none;
+       background-image: url('151944817.png');
+       background-size: 100%;
+       font-size: 3em;
+       font-family: Times New Roman;
+       /* центрируем текст кнопки по вертикали */
+       display: flex ;
+       justify-content: start;
+       align-items: flex-end;
+     opacity: 0.8;
+    margin-left:20px;
+	 margin-top:100px;
+
+
+     }
+     .Git-button:hover {
+       opacity: 0.5;
+       color: #527c82;
+       box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+     }
+
+     .Git-button:active {
+       transform: scale(0.95);
+     }
+    .Git-button {border-radius: 20px;}
+
+    .Git-button:focus {
+      outline: 0;
+    }
+
+.Head-button {
+           float: center;
+           width: 98%;
+           height: 15vh;
+           border: none;
+           background-image: url('Screenshot_1.png');
+           background-size: 100%;
+           font-size: 2rem;
+           color: red;
+           font-family: Times New Roman;
+         /* центрируем текст кнопки по вертикали */
+           display: flex ;
+           justify-content: start;
+           align-items: flex-start;
+
+           margin-left:1%;
+           	 margin-top:1%;
+           	 margin-right:1%;
+         }
+         .Head-button:hover {
+           opacity: 0.8;
+           color: #527c82;
+           box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+         }
+
+         .Head-button:active {
+           transform: scale(0.95);
+         }
+        .Head-button {border-radius: 20px;}
+
+        .Head-button:focus {
+          outline: 0;    }
