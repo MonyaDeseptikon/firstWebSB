@@ -1,14 +1,13 @@
  body {
           background-image: url("P_20181120_210123_vHDR_On.jpg");
           background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-
-
+          /*background-repeat: no-repeat;*/
+          background-position: top;
 }
 
 a {
  text-decoration: none;
+    background-color: red;
 }
 
 .Git-button {
@@ -18,29 +17,25 @@ a {
        border: none;
        background-image: url('151944817.png');
        background-size: 100%;
-       font-size: 3em;
+       font-size: 20pt;
        font-family: Times New Roman;
        /* центрируем текст кнопки по вертикали */
        display: flex ;
-       justify-content: start;
-       align-items: flex-end;
+       justify-content: left;
+       align-items: flex-start;
      opacity: 0.8;
-    margin-left:20px;
-	 margin-top:100px;
-
-
+     margin-left:20px;
+	 margin-top: 20px;
      }
      .Git-button:hover {
        opacity: 0.5;
        color: #527c82;
        box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
      }
-
      .Git-button:active {
        transform: scale(0.95);
      }
     .Git-button {border-radius: 20px;}
-
     .Git-button:focus {
       outline: 0;
     }
@@ -52,14 +47,16 @@ a {
            border: none;
            background-image: url('Screenshot_1.png');
            background-size: 100%;
-           font-size: 2rem;
-           color: red;
+           /* текст кнопки */
+           font-size: 20pt;
+           color: white;
            font-family: Times New Roman;
          /* центрируем текст кнопки по вертикали */
            display: flex ;
-           justify-content: start;
+           justify-content: left;
            align-items: flex-start;
-
+          /* font-style: italic;
+ /* текст кнопки */
            margin-left:1%;
            	 margin-top:1%;
            	 margin-right:1%;
@@ -69,11 +66,39 @@ a {
            color: #527c82;
            box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
          }
-
          .Head-button:active {
            transform: scale(0.95);
          }
         .Head-button {border-radius: 20px;}
-
         .Head-button:focus {
           outline: 0;    }
+
+.Swagger-button {
+     float: left;
+       width: 200pt;
+       height: 200pt;
+       border: none;
+       background-image: url('P_20181120_210123_vHDR_On.jpg');
+       background-size: 100%;
+       font-size: 20pt;
+       font-family: Times New Roman;
+       /* центрируем текст кнопки по вертикали */
+       display: flex ;
+       justify-content: left;
+       align-items: flex-start;
+     opacity: 0.8;
+     margin-left:20px;
+	 margin-top: 20px;
+     }
+     .Swagger-button:hover {
+       opacity: 0.5;
+       color: #527c82;
+       box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+     }
+     .Swagger-button:active {
+       transform: scale(0.95);
+     }
+    .Swagger-button {border-radius: 20px;}
+    .Swagger-button:focus {
+      outline: 0;
+    }
