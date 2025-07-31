@@ -1,0 +1,10 @@
+#FROM ubuntu:latest
+#LABEL authors="User"
+#
+#ENTRYPOINT ["top", "-b"]
+
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD=root
+#ENV MYSQL_DATABASE: notes
+#ENV MYSQL_USER: user
+#ENV MYSQL_PASSWORD: root

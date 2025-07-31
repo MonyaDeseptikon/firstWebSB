@@ -6,16 +6,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-
 public class HomeController {
     @RequestMapping(value = "/home")
     public String home() {
-        return "redirect://homePage.html";
+        return "redirect:/homepage.html";
     }
 
-    @RequestMapping("/other-page")
-    public String otherPages1() {
-        return "redirect://index2.html";
+    @RequestMapping("/howItsWas")
+    public String howItsWas() {
+        return "redirect:/howItsWas.html";
+    }
+
+    @RequestMapping("/springsecurity")
+    public String springSecurity() {
+        return "redirect:/springsecurity.html";
     }
 
 

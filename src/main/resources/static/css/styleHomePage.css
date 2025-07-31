@@ -7,38 +7,8 @@
 
 a {
  text-decoration: none;
-    background-color: red;
+  background-color: red;
 }
-
-.Git-button {
-     float: left;
-       width: 300pt;
-       height: 300pt;
-       border: none;
-       background-image: url('151944817.png');
-       background-size: 100%;
-       font-size: 20pt;
-       font-family: Times New Roman;
-       /* центрируем текст кнопки по вертикали */
-       display: flex ;
-       justify-content: left;
-       align-items: flex-start;
-     opacity: 0.8;
-     margin-left:20px;
-	 margin-top: 20px;
-     }
-     .Git-button:hover {
-       opacity: 0.5;
-       color: #527c82;
-       box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
-     }
-     .Git-button:active {
-       transform: scale(0.95);
-     }
-    .Git-button {border-radius: 20px;}
-    .Git-button:focus {
-      outline: 0;
-    }
 
 .Head-button {
            float: center;
@@ -48,7 +18,7 @@ a {
            background-image: url('Screenshot_1.png');
            background-size: 100%;
            /* текст кнопки */
-           font-size: 20pt;
+           font-size: 30pt;
            color: white;
            font-family: Times New Roman;
          /* центрируем текст кнопки по вертикали */
@@ -73,14 +43,14 @@ a {
         .Head-button:focus {
           outline: 0;    }
 
-.Swagger-button {
+.Git-button {
      float: left;
-       width: 200pt;
-       height: 200pt;
+       width: 300pt;
+       height: 300pt;
        border: none;
-       background-image: url('P_20181120_210123_vHDR_On.jpg');
+       background-image: url('151944817.png');
        background-size: 100%;
-       font-size: 20pt;
+       font-size: 30pt;
        font-family: Times New Roman;
        /* центрируем текст кнопки по вертикали */
        display: flex ;
@@ -89,6 +59,40 @@ a {
      opacity: 0.8;
      margin-left:20px;
 	 margin-top: 20px;
+	 margin-right: 20px;
+	 margin-bottom: 20px;
+     }
+     .Git-button:hover {
+       opacity: 0.5;
+       color: #527c82;
+       box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+     }
+     .Git-button:active {
+       transform: scale(0.95);
+     }
+    .Git-button {border-radius: 20px;}
+    .Git-button:focus {
+      outline: 0;
+    }
+
+.Swagger-button {
+     float: left;
+       width: 200pt;
+       height: 200pt;
+       border: none;
+       background-image: url('swaggerPic.png');
+       background-size: 100%;
+       font-size: 30pt;
+       font-family: Times New Roman;
+       /* центрируем текст кнопки по вертикали */
+       display: flex ;
+       justify-content: left;
+       align-items: flex-start;
+     opacity: 0.8;
+        margin-left:20px;
+     	 margin-top: 20px;
+     	 margin-right: 20px;
+     	 margin-bottom: 20px;
      }
      .Swagger-button:hover {
        opacity: 0.5;
@@ -102,3 +106,36 @@ a {
     .Swagger-button:focus {
       outline: 0;
     }
+
+
+    .SpringSecurity-button {
+         float: center;
+           width: 300pt;
+           height: 150pt;
+           border: none;
+           background-image: url('i.webp');
+           background-size: 100%;
+           font-size: 30pt;
+           font-family: Times New Roman;
+           /* центрируем текст кнопки по вертикали */
+           display: flex ;
+           justify-content: left;
+           align-items: flex-start;
+         opacity: 0.8;
+         margin-left: 20px;
+    	 margin-top: 20px;
+    	 margin-right: 20px;
+    	 margin-bottom: 20px;
+         }
+         .SpringSecurity-button:hover {
+           opacity: 0.5;
+           color: #527c82;
+           box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+         }
+         .SpringSecurity-button:active {
+           transform: scale(0.95);
+         }
+        .SpringSecurity-button {border-radius: 20px;}
+        .SSpringSecurity-button:focus {
+          outline: 0;
+        }

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-
 public class GreetingController {
     @RequestMapping(value = "/greeting")
        public String greeting(Model model) {
