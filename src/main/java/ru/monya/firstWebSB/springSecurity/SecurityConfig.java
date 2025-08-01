@@ -13,9 +13,6 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.servlet.util.matcher.*;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 
 
 @Configuration
@@ -41,15 +38,22 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req -> req
 //                        .dispatcherTypeMatchers(FORWARD, ERROR).permitAll()
+                        //SpringSecurity это , наверно, самое мудреное из всего Спринга
                         //Сопоставитель не видит путь, но видит имя страницы к которой путь ведет
-                        .requestMatchers("/", "/home", "/homepage.html", "/css/**", "/howItsWas", "/howItsWas.html",
-                                "/swagger-ui/index.html", "/swagger-ui/**", "/v3/api-docs/**", "/api/notes/**", "/api/notes").permitAll())
+                        .requestMatchers("/", "/home", "/homepage.html", "/css/**", "/howItsWas", "/how-its-was.html",
+                                "/swagger-ui/index.html", "/swagger-ui/**", "/v3/api-docs/**", "/api/notes/**", "/api/notes", "/pic/**").permitAll())
 
                 .authorizeHttpRequests(req -> req
                         .requestMatchers("/springsecurity", "/springsecurity.html").hasRole("USER")
-                        .requestMatchers("/admin").hasRole("ADMIN"))
-//                .anyRequest().authenticated()
+                        .requestMatchers("/admin").hasRole("ADMIN")
+                        .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
+//                .addFilter(new JwtAuthenticationFilter(authenticationManager()))
+//                //        Добавляем наш фильтр аутентификации
+//                .sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//                // Не создаем сессию, так как будем использовать JWT
+
                 .build();
     }
 

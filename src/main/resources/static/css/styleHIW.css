@@ -2,12 +2,13 @@
  background-color: green;
  }
  h1 {
-  color: navy;
+  color: black;
       font-family: 'Arial', sans-serif;
  }
  p {
-   color: green;
+   color: black;
        font-family: 'Times New Roman';
+       font-size: 30pt;
   }
 
 img {

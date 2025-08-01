@@ -4,6 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
+//Чего только не перепробовал
 //@Data // Generates getters, setters, toString, equals, and hashCode methods.
 //@NoArgsConstructor // Generates a no-args constructor.
 //@AllArgsConstructor // Generates a constructor with all arguments.
