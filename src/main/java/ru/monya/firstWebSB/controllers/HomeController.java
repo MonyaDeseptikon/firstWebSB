@@ -1,5 +1,6 @@
 package ru.monya.firstWebSB.controllers;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -16,8 +17,8 @@ public class HomeController {
     }
 
     @RequestMapping("/springsecurity")
-    public String springSecurity() {
-        return "redirect:/springsecurity.html";
+    public String springSecurity(HttpServletRequest request) {
+        return "redirect:/spring-security.html";
     }
 }
 //Это п...ц товарищи, - простая команда  redirect: перенаправляет на статические ресурсы при использовании шаблонов Thymeleaf.

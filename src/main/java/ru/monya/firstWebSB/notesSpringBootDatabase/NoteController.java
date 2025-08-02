@@ -7,6 +7,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notes")
+@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS})
 public class NoteController {
 
     private final NoteService service;
@@ -31,6 +33,7 @@ public class NoteController {
     }
 
     @PostMapping
+
     public Note save(@RequestBody Note note) {
         return service.createNote(note);
     }
